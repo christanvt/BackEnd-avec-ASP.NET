@@ -1,0 +1,7 @@
+C:\Users\cviot2021\source\repos\DemoLinq3\bin\Debug\DemoLinq3.exe.config
+C:\Users\cviot2021\source\repos\DemoLinq3\bin\Debug\DemoLinq3.exe
+C:\Users\cviot2021\source\repos\DemoLinq3\bin\Debug\DemoLinq3.pdb
+C:\Users\cviot2021\source\repos\DemoLinq3\obj\Debug\DemoLinq3.csproj.AssemblyReference.cache
+C:\Users\cviot2021\source\repos\DemoLinq3\obj\Debug\DemoLinq3.csproj.CoreCompileInputs.cache
+C:\Users\cviot2021\source\repos\DemoLinq3\obj\Debug\DemoLinq3.exe
+C:\Users\cviot2021\source\repos\DemoLinq3\obj\Debug\DemoLinq3.pdb
