@@ -1,0 +1,7 @@
+C:\Users\cviot2021\source\repos\DemoLambda\bin\Debug\DemoLambda.exe.config
+C:\Users\cviot2021\source\repos\DemoLambda\bin\Debug\DemoLambda.exe
+C:\Users\cviot2021\source\repos\DemoLambda\bin\Debug\DemoLambda.pdb
+C:\Users\cviot2021\source\repos\DemoLambda\obj\Debug\DemoLambda.csproj.AssemblyReference.cache
+C:\Users\cviot2021\source\repos\DemoLambda\obj\Debug\DemoLambda.csproj.CoreCompileInputs.cache
+C:\Users\cviot2021\source\repos\DemoLambda\obj\Debug\DemoLambda.exe
+C:\Users\cviot2021\source\repos\DemoLambda\obj\Debug\DemoLambda.pdb
