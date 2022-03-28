@@ -1,0 +1,7 @@
+C:\Users\cviot2021\source\repos\MethodeExtension\bin\Debug\MethodeExtension.exe.config
+C:\Users\cviot2021\source\repos\MethodeExtension\bin\Debug\MethodeExtension.exe
+C:\Users\cviot2021\source\repos\MethodeExtension\bin\Debug\MethodeExtension.pdb
+C:\Users\cviot2021\source\repos\MethodeExtension\obj\Debug\MethodeExtension.csproj.AssemblyReference.cache
+C:\Users\cviot2021\source\repos\MethodeExtension\obj\Debug\MethodeExtension.csproj.CoreCompileInputs.cache
+C:\Users\cviot2021\source\repos\MethodeExtension\obj\Debug\MethodeExtension.exe
+C:\Users\cviot2021\source\repos\MethodeExtension\obj\Debug\MethodeExtension.pdb
