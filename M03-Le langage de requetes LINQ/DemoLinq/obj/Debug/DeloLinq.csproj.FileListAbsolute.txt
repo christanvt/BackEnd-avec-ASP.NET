@@ -1,0 +1,7 @@
+C:\Users\cviot2021\source\repos\Mo02-Les bases du langage C#\DeloLinq\bin\Debug\DeloLinq.exe.config
+C:\Users\cviot2021\source\repos\Mo02-Les bases du langage C#\DeloLinq\bin\Debug\DeloLinq.exe
+C:\Users\cviot2021\source\repos\Mo02-Les bases du langage C#\DeloLinq\bin\Debug\DeloLinq.pdb
+C:\Users\cviot2021\source\repos\Mo02-Les bases du langage C#\DeloLinq\obj\Debug\DeloLinq.csproj.AssemblyReference.cache
+C:\Users\cviot2021\source\repos\Mo02-Les bases du langage C#\DeloLinq\obj\Debug\DeloLinq.csproj.CoreCompileInputs.cache
+C:\Users\cviot2021\source\repos\Mo02-Les bases du langage C#\DeloLinq\obj\Debug\DeloLinq.exe
+C:\Users\cviot2021\source\repos\Mo02-Les bases du langage C#\DeloLinq\obj\Debug\DeloLinq.pdb
