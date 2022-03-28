@@ -1,0 +1,7 @@
+C:\Users\cviot2021\source\repos\UtilisationClasse\bin\Debug\UtilisationClasse.exe.config
+C:\Users\cviot2021\source\repos\UtilisationClasse\bin\Debug\UtilisationClasse.exe
+C:\Users\cviot2021\source\repos\UtilisationClasse\bin\Debug\UtilisationClasse.pdb
+C:\Users\cviot2021\source\repos\UtilisationClasse\obj\Debug\UtilisationClasse.csproj.AssemblyReference.cache
+C:\Users\cviot2021\source\repos\UtilisationClasse\obj\Debug\UtilisationClasse.csproj.CoreCompileInputs.cache
+C:\Users\cviot2021\source\repos\UtilisationClasse\obj\Debug\UtilisationClasse.exe
+C:\Users\cviot2021\source\repos\UtilisationClasse\obj\Debug\UtilisationClasse.pdb

@@ -1,0 +1,7 @@
+C:\Users\cviot2021\source\repos\DemoGenerique2\obj\Debug\DemoGenerique2.csproj.AssemblyReference.cache
+C:\Users\cviot2021\source\repos\DemoGenerique2\obj\Debug\DemoGenerique2.csproj.CoreCompileInputs.cache
+C:\Users\cviot2021\source\repos\DemoGenerique2\bin\Debug\DemoGenerique2.exe.config
+C:\Users\cviot2021\source\repos\DemoGenerique2\bin\Debug\DemoGenerique2.exe
+C:\Users\cviot2021\source\repos\DemoGenerique2\bin\Debug\DemoGenerique2.pdb
+C:\Users\cviot2021\source\repos\DemoGenerique2\obj\Debug\DemoGenerique2.exe
+C:\Users\cviot2021\source\repos\DemoGenerique2\obj\Debug\DemoGenerique2.pdb

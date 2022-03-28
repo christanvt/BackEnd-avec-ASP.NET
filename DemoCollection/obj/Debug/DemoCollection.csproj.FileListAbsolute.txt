@@ -1,0 +1,7 @@
+C:\Users\cviot2021\source\repos\DemoCollection\bin\Debug\DemoCollection.exe.config
+C:\Users\cviot2021\source\repos\DemoCollection\bin\Debug\DemoCollection.exe
+C:\Users\cviot2021\source\repos\DemoCollection\bin\Debug\DemoCollection.pdb
+C:\Users\cviot2021\source\repos\DemoCollection\obj\Debug\DemoCollection.csproj.AssemblyReference.cache
+C:\Users\cviot2021\source\repos\DemoCollection\obj\Debug\DemoCollection.csproj.CoreCompileInputs.cache
+C:\Users\cviot2021\source\repos\DemoCollection\obj\Debug\DemoCollection.exe
+C:\Users\cviot2021\source\repos\DemoCollection\obj\Debug\DemoCollection.pdb
