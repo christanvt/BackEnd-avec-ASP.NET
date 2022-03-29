@@ -2,6 +2,14 @@
 
 @{
     ViewBag.Title = "Edit";
+    var moyensDeLocomotion = new List<string>
+{
+        "Voiture","Train","Bus","Métro","Vélo","SkateBoard"
+    };
+    var sports = new List<string>
+{
+        "Curling","Hockey sur gazon","Roller Derby","Squash","Gymnastique aquatique","Surf des sables"
+    };
 }
 
 <h2>Edit</h2>
@@ -9,7 +17,7 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Personne</h4>
         <hr />
@@ -45,6 +53,15 @@
                 <input type="submit" value="Save" class="btn btn-default" />
             </div>
         </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.MoyenDeLocomotion, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.DropDownListFor(m => m.MoyenDeLocomotion, moyensDeLocomotion.Select(s => new SelectListItem { Text = s, Value = s }))
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Sports, htmlAttributes: new { @class = "control-label col-md-2" })
+        @Html.ListBoxFor(m => m.Sports, sports.Select(s => new SelectListItem { Text = s, Value = s }))
     </div>
 }
 

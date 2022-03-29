@@ -11,5 +11,8 @@ namespace SiteDemoRazor.Models
         public string Nom { get; set; }
         public string Prenom { get; set; }
         public int Age { get; set; }
+
+        public string MoyenDeLocomotion { get; set; }
+        public List<string> Sports { get; set; }
     }
 }
