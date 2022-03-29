@@ -171,6 +171,7 @@
     <Content Include="Views\Personne\Delete.cshtml" />
     <Content Include="Views\Personne\Details.cshtml" />
     <Content Include="Views\Personne\_PersonneDetails.cshtml" />
+    <Content Include="Views\Personne\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

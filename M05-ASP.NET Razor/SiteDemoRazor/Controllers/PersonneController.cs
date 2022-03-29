@@ -70,17 +70,26 @@ namespace SiteDemoRazor.Controllers
         // GET: Personne/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var personne = personnes.FirstOrDefault(p => p.Id == id);
+            if (personne != null)
+            {
+                return View(personne);
+            }
+            return RedirectToAction("Index");
         }
 
         // POST: Personne/Edit/5
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Edit(Personne personne)
         {
             try
             {
                 // TODO: Add update logic here
-                return View();
+                var personneDb = personnes.FirstOrDefault(p => p.Id == personne.Id);
+                personneDb.Nom = personne.Nom;
+                personneDb.Prenom = personne.Prenom;
+                personneDb.Age = personne.Age;
+                return RedirectToAction("Index");
                 
             }
             catch
