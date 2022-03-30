@@ -15,14 +15,14 @@ namespace BO
 
         public static List<Ingredient> IngredientsDisponibles => new List<Ingredient>
         {
-            new Ingredient{Id=1,Nom="Mozzarella"},
-            new Ingredient{Id=2,Nom="Jambon"},
-            new Ingredient{Id=3,Nom="Tomate"},
-            new Ingredient{Id=4,Nom="Oignon"},
-            new Ingredient{Id=5,Nom="Cheddar"},
-            new Ingredient{Id=6,Nom="Saumon"},
-            new Ingredient{Id=7,Nom="Champignon"},
-            new Ingredient{Id=8,Nom="Poulet"}
+            new Ingredient{Id=1,Nom="⚪ Mozzarella"},
+            new Ingredient{Id=2,Nom="🥓 Jambon"},
+            new Ingredient{Id=3,Nom="🍅 Tomate"},
+            new Ingredient{Id=4,Nom="🧅 Oignon"},
+            new Ingredient{Id=5,Nom="🧀 Cheddar"},
+            new Ingredient{Id=6,Nom="🐟 Saumon"},
+            new Ingredient{Id=7,Nom="🍄 Champignon"},
+            new Ingredient{Id=8,Nom="🍗 Poulet"}
         };
 
         public static List<Pate> PatesDisponibles => new List<Pate>
