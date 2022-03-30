@@ -54,6 +54,58 @@ namespace LesPizzas.Controllers
             return vm;
         }
 
+        private bool ValidRegles(PizzaEdition pe)
+        {
+            var errorScore = 0;
+
+            if (pizzas.Any(p => p.Nom.ToUpper() == pe.Pizza.Nom.ToUpper() && pe.Pizza.Id != p.Id))
+            {
+                ModelState.AddModelError("", "Il existe déjà une pizza portant ce nom ");
+                errorScore++;
+            }
+
+            if (pe.Pizza.Nom.Length < 5 || pe.Pizza.Nom.Length > 20)
+            {
+                ModelState.AddModelError("", "Une pizza doitavoir un nom compris entre 5 et 20 caractères ");
+                errorScore++;
+            }
+
+            if (pe.IdSelectedPate == 0)
+            {
+                ModelState.AddModelError("", "La pizza doit avoir une pate ");
+                errorScore++;
+            }
+
+            if (pe.IdSelectedIngredients.Count < 2 || pe.IdSelectedIngredients.Count > 5)
+            {
+                ModelState.AddModelError("", "La pizza doit avoir entre 2 et 5 ingrédients ");
+                errorScore++;
+            }
+
+            var pizzasVerifNombreIngredients = pizzas.Where(p => p.Ingredients.Count == pe.IdSelectedIngredients.Count && pe.Pizza.Id != p.Id);
+
+            foreach (var pizza in pizzasVerifNombreIngredients)
+            {
+                var verifIngredients = true;
+                for (int i = 0; i < pizza.Ingredients.Count; i++)
+                {
+                    if (!pe.IdSelectedIngredients.Contains(pizza.Ingredients[i].Id))
+                    {
+                        verifIngredients = false;
+                        break;
+                    }
+                }
+                if (verifIngredients)
+                {
+                    ModelState.AddModelError("", "Il existe une pizza pocédant les mêmes ingrédients");
+                    errorScore++;
+                    break;
+                }
+
+            }
+            return errorScore == 0;
+        }
+
         // GET: Pizza
         public ActionResult Index()
         {
@@ -82,6 +134,12 @@ namespace LesPizzas.Controllers
         {
             try
             {
+                if (!ValidRegles(pizzaEdition))
+                {
+                    throw new Exception("Une erreure de saisie s'est produite");
+                }
+
+                
                 var pizza = pizzaEdition.Pizza;
                 pizza.Ingredients = ingredientsDisponibles.Where(i => pizzaEdition.IdSelectedIngredients.Contains(i.Id)).ToList();
                 pizza.Pate = patesDisponibles.FirstOrDefault(p => p.Id == pizzaEdition.IdSelectedPate);
@@ -111,6 +169,11 @@ namespace LesPizzas.Controllers
         {
             try
             {
+                if (!ValidRegles(pizzaEdition))
+                {
+                    throw new Exception("Une erreure de saisie s'est produite");
+                }
+
                 var pizza = pizzas.FirstOrDefault(p => p.Id == pizzaEdition.Pizza.Id);
                 pizza.Nom = pizzaEdition.Pizza.Nom;
                 pizza.Ingredients = ingredientsDisponibles.Where(i => pizzaEdition.IdSelectedIngredients.Contains(i.Id)).ToList();
