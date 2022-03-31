@@ -6,13 +6,15 @@ using System.Threading.Tasks;
 
 namespace DemoDbContext
 {
-    public class Personne
+   public class Adresse
     {
         public int Id { get; set; }
         public string Nom { get; set; }
-        public string Prenom { get; set; }
+        public int Numero { get; set; }
 
-        public virtual Adresse Adresse { get; set; }
-
+        public override string ToString()
+        {
+            return $"{Numero} {Nom}"; 
+        }
     }
 }

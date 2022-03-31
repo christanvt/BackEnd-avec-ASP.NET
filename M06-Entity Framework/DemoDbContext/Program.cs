@@ -12,9 +12,16 @@ namespace DemoDbContext
         {
             var context = new Context();
 
+            //var adresse1 = new Adresse { Nom = "Rue des Lilas", Numero = 42 };
+            //var adresse2 = new Adresse { Nom = "Rue des Mimosas", Numero = 26 };
+
+            //context.Personnes.FirstOrDefault(p => p.Id == 1).Adresse = adresse1;
+            //context.Personnes.FirstOrDefault(p => p.Id == 2).Adresse = adresse2;
+            //context.SaveChanges();
+
             foreach (var personne in context.Personnes)
             {
-                Console.WriteLine($"Nom:{personne.Nom}, Prenom:{personne.Prenom}");
+                Console.WriteLine($"Nom:{personne.Nom}, Prenom:{personne.Prenom}, Adresse:{personne.Adresse}");
             }
 
             if (!context.Personnes.Any())
