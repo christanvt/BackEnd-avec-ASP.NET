@@ -24,7 +24,7 @@ namespace AlbumMusique.Migrations
                     {
                         Id = c.Int(nullable: false, identity: true),
                         Nom = c.String(),
-                        MyPrperty = c.String(),
+                        Prenom = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
             

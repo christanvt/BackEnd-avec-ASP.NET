@@ -13,7 +13,7 @@ namespace AlbumMusique.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202204051442078_initial"; }
+            get { return "202204051548335_initial"; }
         }
         
         string IMigrationMetadata.Source

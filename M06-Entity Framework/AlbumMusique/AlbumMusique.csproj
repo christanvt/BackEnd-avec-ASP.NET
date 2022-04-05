@@ -127,14 +127,15 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AlbumsController.cs" />
+    <Compile Include="Controllers\ArtistesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Data\Context.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202204051442078_initial.cs" />
-    <Compile Include="Migrations\202204051442078_initial.Designer.cs">
-      <DependentUpon>202204051442078_initial.cs</DependentUpon>
+    <Compile Include="Migrations\202204051548335_initial.cs" />
+    <Compile Include="Migrations\202204051548335_initial.Designer.cs">
+      <DependentUpon>202204051548335_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -180,6 +181,11 @@
     <Content Include="Views\Albums\Details.cshtml" />
     <Content Include="Views\Albums\Edit.cshtml" />
     <Content Include="Views\Albums\Index.cshtml" />
+    <Content Include="Views\Artistes\Create.cshtml" />
+    <Content Include="Views\Artistes\Delete.cshtml" />
+    <Content Include="Views\Artistes\Details.cshtml" />
+    <Content Include="Views\Artistes\Edit.cshtml" />
+    <Content Include="Views\Artistes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -205,8 +211,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202204051442078_initial.resx">
-      <DependentUpon>202204051442078_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202204051548335_initial.resx">
+      <DependentUpon>202204051548335_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
