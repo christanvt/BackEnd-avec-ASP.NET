@@ -14,5 +14,9 @@ namespace BO
         public int Annee{get;set;}
         public int NombreDePistes { get; set; }
 
+        public List<Piste> Pistes { get; set; } = new List<Piste>();
+
+        public List<Artiste> Artistes { get; set; } = new List<Artiste>();
+
     }
 }

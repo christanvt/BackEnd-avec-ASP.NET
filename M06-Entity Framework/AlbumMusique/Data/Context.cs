@@ -1,6 +1,8 @@
-﻿using System;
+﻿using BO;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Linq;
 using System.Web;
 
@@ -19,6 +21,16 @@ namespace AlbumMusique.Data
         {
         }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+            modelBuilder.Entity<Album>().Ignore(a => a.NombreDePistes);
+            modelBuilder.Entity<Album>().HasMany(a => a.Pistes).WithRequired();
+            modelBuilder.Entity<Album>().HasMany(a => a.Artistes).WithMany();
+            base.OnModelCreating(modelBuilder);
+        }
+
         public System.Data.Entity.DbSet<BO.Album> Albums { get; set; }
+        public DbSet<Artiste> Artistes { get; set; }
     }
 }
